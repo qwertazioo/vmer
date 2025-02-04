@@ -16,21 +16,6 @@
     <div id="v86-container"></div>
 
     <!-- Load v86 dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/v86@latest/dist/v86.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/v86@latest/dist/v86.wasm.js"></script>
-
-    <script>
-        async function startEmulator() {
-            const memory = new WebAssembly.Memory({ initial: 256 });
-            
-            const emulator = new V86Starter({
-                memory,
-                wasm_path: 'https://cdn.jsdelivr.net/npm/v86@latest/dist/v86.wasm',
-                cdrom: {
-                    url: 'https://copy.sh/v86/linux-latest.iso'
-                },
-                screen_container: document.getElementById('v86-container'),
-                autostart: true
-            });
-
-            await emula
+    <script src="https://copy.sh/v86/?profile=archlinux">
+    </body>
+        </html>
